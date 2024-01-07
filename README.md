@@ -23,6 +23,9 @@ Windows:
 git clone https://github.com/chichung-au-dev/vcard-personal-portfolio.git
 ```
 
+## Reference
+- [vcard-personal-portfolio by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio)
+
 ## License
 - vCard is released under the [MIT License](https://opensource.org/licenses/MIT).
 ```

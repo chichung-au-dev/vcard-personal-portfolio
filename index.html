@@ -84,22 +84,22 @@
 
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://github.com/chichung-au-dev/" class="social-link">
+            <a href="https://github.com/chichung-au-dev/" target="_blank" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://gitlab.com/chichung-au-dev/" class="social-link">
+            <a href="https://gitlab.com/chichung-au-dev/" target="_blank" class="social-link">
               <ion-icon name="logo-gitlab"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="https://www.instagram.com/lil.a1vin/" class="social-link">
+          <!-- <li class="social-item">
+            <a href="https://www.instagram.com/lil.a1vin/" target="_blank" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </aside>
@@ -119,9 +119,9 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -440,6 +440,8 @@
           </div>
 
           <ul class="project-list">
+            <!-- Demo Project -->
+            <!--
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
                 <figure class="project-img">
@@ -583,10 +585,29 @@
                 <p class="project-category">Web development</p>
               </a>
             </li>
+            -->
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img" onclick="redirectToURL('https://chichung-au-dev.github.io')">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project/personal-portfolio.png" alt="personal portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Personal Portfolio</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
           </ul>
         </section>
       </article>
 
+      <!-- Blog Section -->
+      <!--
       <article class="blog" data-page="blog">
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -742,6 +763,7 @@
           </ul>
         </section>
       </article>
+      -->
 
       <article class="contact" data-page="contact">
         <header>
@@ -751,14 +773,26 @@
         <section class="contact-map">
           <h3 class="h3 map-title">Where Am I</h3>
           <div class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29497.740669581937!2d113.98266358303364!3d22.4584563926557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f08807915f99%3A0xd64729f174fcb284!2sTin%20Shui%20Wai!5e0!3m2!1sen!2shk!4v1702015193063!5m2!1sen!2shk"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29497.740669581937!2d113.98266358303364!3d22.4584563926557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f08807915f99%3A0xd64729f174fcb284!2sTin%20Shui%20Wai!5e0!3m2!1sen!2shk!4v1702015193063!5m2!1sen!2shk"
+                width="400" height="300" loading="lazy"></iframe>
+            </figure>
           </div>
         </section>
 
+        <section class="contact-address">
+          <h3 class="h3 form-title">Address</h3>
+          <section class="about-text">
+            <p>
+              <address>Tin Shui Wai,<br/>New Territories,<br/>Hong Kong</address><br/>
+              If you have any questions, feel free to email me at chichung.au.dev@gmail.com
+            </p>
+          </section>
+        </section>
+
+        <!-- Contact Form Section -->
+        <!--
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
 
@@ -777,9 +811,16 @@
             </button>
           </form>
         </section>
+        -->
       </article>
     </div>
   </main>
+  <script>
+    function redirectToURL(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
